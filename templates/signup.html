@@ -4,27 +4,29 @@
 <html>
 <body>
 <div  id="form_id">
-	<form action = "/mymusic/signup/" method="post" name="registration">{% csrf_token%}
-	  First name:<br>
-	  <input type="text" name="firstname" id="firstname"/>
-	  <br>
-	  Last name:<br>
-	  <input type="text" name="lastname" id="lastname"/>
-	  <br>
-	email:<br>
-	<input type = "text" name = "email" id = "email" required = "required"/>
-	<br>
-	mobile:<br>
-	<input type = "text" name = "mobilenumber" id = "mobilenumber" required = "required"/>
-	<br>
-	password:<br>
-	<input type = "password" name = "password" id = "password" required = "required"/>
-	<br>
-	confirm password:<br>
-	<input type =  "password" name = "repassword" id = "repassword" required = "required"/>
-	<br>
-	<input type = "submit" value="Register"/>
-	</form>
+	<center><form action = "/mymusic/signup/" method="post" name="registration">{% csrf_token%}
+        
+            <b>First name<br></b>
+            <input type="text" name="firstname" id="firstname"/>
+            <br>
+            <b>Last name<br></b>
+            <input type="text" name="lastname" id="lastname"/>
+            <br>
+        	<b>Email<br></b>
+        	<input type = "text" name = "email" id = "email" required = "required"/>
+        	<br>
+        	<b>Mobile<br></b>
+        	<input type = "text" name = "mobilenumber" id = "mobilenumber" required = "required"/>
+        	<br>
+        	<b>Password<br></b>
+        	<input type = "password" name = "password" id = "password" required = "required"/>
+        	<br>
+        	<b>Confirm password<br></b>
+        	<input type =  "password" name = "repassword" id = "repassword" required = "required"/>
+        	<br><br>
+        	<input type = "submit" value="Register"/>
+        
+	</form></center>
 </div>
 </body>
 <script type="text/javascript">

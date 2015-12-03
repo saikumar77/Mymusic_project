@@ -56,8 +56,8 @@ ROOT_URLCONF = 'wp_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['D:/wp_project/templates',
-        'D:/wp_project/mymusic/templates'],
+        'DIRS': ['G:/WebProgramming/wp_project/wp_project/templates',
+        'G:/WebProgramming/wp_project/wp_project/mymusic/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'wp_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mysql.connector.django',
-        'NAME': 'amey',
+        'NAME': 'django',
         'USER':'root',
-        'PASSWORD':'root',        
+        'PASSWORD':'saikumar',        
     }
 }
 
@@ -99,14 +99,14 @@ USE_L10N = True
 
 USE_TZ = True
 
-STATIC_ROOT = 'D:/wp_project/static/assets'
+STATIC_ROOT = 'G:/WebProgramming/wp_project/wp_project/static/assets'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    ('assets','D:/wp_project/static'),
+    ('assets','G:/WebProgramming/wp_project/wp_project/static'),
     )
-MEDIA_ROOT = 'D:/wp_project/static'
+MEDIA_ROOT = 'G:/WebProgramming/wp_project/wp_project/static'
 MEDIA_URL = ''

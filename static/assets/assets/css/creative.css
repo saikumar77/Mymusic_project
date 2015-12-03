@@ -1,0 +1,13 @@
+html{
+   position: relative;
+   width: 100%;
+   min-height: auto;
+   text-align: center;
+   color: #fff;
+   background: url(lol.jpg);
+   background-position: center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+}

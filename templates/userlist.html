@@ -1,0 +1,15 @@
+{% extends "home.html" %}
+{% block content %}
+{% if username != null %}
+	<h3>Your Playlist</h3>
+	<hr>
+	{% for song in playlist %}
+		<div>
+			<ul><li><h5><a href="/mymusic/play/{{ song.songName.id }}/">{{song.songName.thumbnail}}</a></h5></li></ul>
+			<a href="/mymusic/delitem/{{song.songName.id}}/"><input type="button" value="RemoveFromList"></a>
+		</div>
+	{% endfor %}
+{% else %}
+	<a href="/mymusic/login">yu need to log in to view the playlist</a>
+{% endif %}
+{% endblock %}
